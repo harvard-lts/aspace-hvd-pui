@@ -19,8 +19,13 @@ AppConfig[:pui_page_custom_actions] << {
    }
 AppConfig[:pui_page_custom_actions] << {
    'record_type' => ['resource', 'archival_object', 'digital_object'], # the jsonmodel type to show for
+   'erb_partial' => 'shared/feedback'
+   }
+AppConfig[:pui_page_custom_actions] << {
+   'record_type' => ['resource', 'archival_object', 'digital_object'], # the jsonmodel type to show for
    'erb_partial' => 'shared/ask'
    }
+
 
 #AppConfig[:pui_email_enabled] = true
 

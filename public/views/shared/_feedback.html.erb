@@ -1,0 +1,6 @@
+ <% key_part = @request.repo_code.downcase %>
+ <a class='btn btn-primary page_action feedback' href='<%= t("feedbackbtn.link.#{key_part}", default: t("feedbackbtn.link.default"))%>'
+    title='<%=  t("feedbackbtn.text.#{key_part}", default: t("feedbackbtn.text.default")) %>' target='_blank'>
+
+<i class="fa fa-comment"></i>&nbsp;<%= t("feedbackbtn.text.#{key_part}", default: t("feedbackbtn.text.default")) %></a>
+
