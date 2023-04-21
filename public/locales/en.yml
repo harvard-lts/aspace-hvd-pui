@@ -15,6 +15,7 @@ en:
     welcome_repo: <a href="/repositories" target="repos" title="see a list of repositories">CONTACT A REPOSITORY</a> <p class='serif'>Learn about hours, more detailed information, and specific policies for each location.</p>
     welcome_hollis: <a href="http://hollis.harvard.edu" target="hollis">EXPLORE MORE IN HOLLIS</a><p class='serif'>Use the Harvard Library catalog to search for additional materials including rare books, images, maps, and more special collections and archival materials.</p>
     welcome_ask: <a href="http://nrs.harvard.edu/urn-3:hul.ois:dsref" target="ask">ASK A LIBRARIAN</a><p class='serif'>Have questions about using this system? Start with this <a href="https://guides.library.harvard.edu/hollisforarchivaldiscovery" target="_blank">Guide</a>. Can’t find what you need? Contact an archivist or librarian for help!</p>
+    welcome_hcs: <a href="http://nrs.harvard.edu/urn-3:hul.ois:dsref" target="ask">REPARATIVE DESCRIPTION</a><p class='serif'>Information about Reparative Description here.<a href="https://guides.library.harvard.edu/hollisforarchivaldiscovery" target="_blank">Reparative Description</a>. Can’t find what you need? Contact an archivist or librarian for help!</p>
     welcome_notification: |
       <div class="alert welcome_notification" role="alert">
         <b>Coming Soon:</b> We’re adding a new feature! Soon you’ll be able to request materials for use in participating libraries and make reproduction requests directly from HOLLIS for Archival Discovery.
@@ -123,7 +124,7 @@ Appointments are available Monday – Friday between 9:30am-12pm and 1pm-4:30pm.
     text:
       default: Feedback
     link:
-      default: https://harvard.libwizard.com/id/474a17371032604dfd3073a30b000575
+      default: https://harvard.az1.qualtrics.com/jfe/form/SV_2aSEHM0J8QcsvVs
   repos:
     ajp:
       lead_graph: "<p>The Arnold Arboretum Horticultural Library is a specialized collection devoted to the study of temperate woody plants. We collect works on botany, horticulture, floras, urban forestry and taxonomy. The library contains more than 25,000 volumes and 40,000 photographs, and includes an archive that both documents the Arboretum's history and is a repository for 19th, 20th, and 21st century horticultural and botanical collections.</p>"
