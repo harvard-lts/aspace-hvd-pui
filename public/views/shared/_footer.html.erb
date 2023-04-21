@@ -17,7 +17,7 @@
         <span class="footerItem"><% if AppConfig[:harmful_language_statement_link] && !AppConfig[:harmful_language_statement_link].blank? %><a id='harmfulLanguageLink' href='<%= AppConfig[:harmful_language_statement_link]%>'><%= t('footer.harmful_language_statement') %></a><% end %></span>
       </div>
       <div class="row">
-        <span class="footerItem"><% if AppConfig[:pui_feedback_link] && !AppConfig[:pui_feedback_link].blank? %><a id='aspaceFeedbackLink' href='<%= AppConfig[:pui_feedback_link]%>'><%= t('footer.feedback') %></a><% end %></span>
+        <span class="footerItem"><% if AppConfig[:pui_feedback_link] && !AppConfig[:pui_feedback_link].blank? %><a id='aspaceFeedbackLink' href='<%= AppConfig[:pui_feedback_link]%>'><%= t('footer.pui_feedback') %></a><% end %></span>
         <span class="footerItem"><% if AppConfig[:pui_help_link] && !AppConfig[:pui_help_link].blank? %><a id='aspaceHelpLink' href='<%= AppConfig[:pui_help_link]%>'><%= t('footer.help') %></a> <% end %></span>
       </div>
     </div>

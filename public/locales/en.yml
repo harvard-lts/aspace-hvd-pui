@@ -30,7 +30,7 @@ en:
   footer:
     staff: Staff Interface
     aspace: "Powered by <a href='%{link}' target='_blank'>%{text}</a>"
-    feedback: Send Feedback
+    pui_feedback: Report a Problem
     help: Help
     accessibility: Accessibility
     copyright: © <b>2020</b> President and Fellows of Harvard College
@@ -119,18 +119,11 @@ Appointments are available Monday – Friday between 9:30am-12pm and 1pm-4:30pm.
       med: https://www.countway.harvard.edu/content/ask-us
       law: https://asklib.law.harvard.edu/HSC/index
       hou: https://ask.library.harvard.edu/houghton
-  feedbackbtn:
+  feedback:
     text:
       default: Feedback
     link:
-      default: https://ask.library.harvard.edu/index.php
-      hua: https://askarc.hul.harvard.edu/index.php?
-      div: https://asklib.hds.harvard.edu/
-      sch: http://asklib.schlesinger.radcliffe.edu/
-      bak: https://asklib.sc.hbs.org/index.php?
-      med: https://www.countway.harvard.edu/content/ask-us
-      law: https://asklib.law.harvard.edu/HSC/index
-      hou: https://ask.library.harvard.edu/houghton
+      default: https://harvard.libwizard.com/id/474a17371032604dfd3073a30b000575
   repos:
     ajp:
       lead_graph: "<p>The Arnold Arboretum Horticultural Library is a specialized collection devoted to the study of temperate woody plants. We collect works on botany, horticulture, floras, urban forestry and taxonomy. The library contains more than 25,000 volumes and 40,000 photographs, and includes an archive that both documents the Arboretum's history and is a repository for 19th, 20th, and 21st century horticultural and botanical collections.</p>"
