@@ -1,6 +1,16 @@
- <% key_part = @request.repo_code.downcase %>
- <a class='btn btn-primary page_action feedback' href='<%= t("feedback.link.#{key_part}", default: t("feedback.link.default"))%>'
-    title='<%=  t("feedback.text.#{key_part}", default: t("feedback.text.default")) %>' target='_blank'>
-
-<i class="fa fa-comment"></i>&nbsp;<%= t("feedback.text.#{key_part}", default: t("feedback.text.default")) %></a>
-
+<% key_part = @request.repo_code.downcase %>
+<%= form_with url: t("feedback.link.default"), id: 'feedback_sub', method: :post, authenticity_token: false, html: {target: '_blank'}  do |form| %>
+  <% unless @result.blank? || @result.is_a?(Hash) || %w|archival_object digital_object resource|.none?(@result.primary_type) %>
+    <%= form.hidden_field :Repository, value: @result.repository_information['top']['name'] %>
+    <%= form.hidden_field :CallNumber, value: @result.identifier %>
+    <%= if title = @result.resolved_resource.dig('title')
+      form.hidden_field(:CollectionTitle, value: title)
+    else
+      ''
+    end %>
+    <%= form.hidden_field :ASpaceUrl, value: request.original_url %>
+  <% end %>
+  <button type="submit" class="btn page_action request btn-default">
+    <i class="fa fa-comment"></i>&nbsp;<%=  t("feedback.text.#{key_part}", default: t("feedback.text.default")) %>
+  </button>
+<% end %>
