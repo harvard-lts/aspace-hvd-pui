@@ -10,7 +10,7 @@
     end %>
     <%= form.hidden_field :ASpaceUrl, value: request.original_url %>
   <% end %>
-  <button type="submit" class="btn page_action request btn-default">
+  <button type="submit" class="btn page_action request btn-default" title='<%= t('feedback.text.default') %>'>
     <i class="fa fa-comment"></i>&nbsp;<%=  t("feedback.text.#{key_part}", default: t("feedback.text.default")) %>
   </button>
 <% end %>
