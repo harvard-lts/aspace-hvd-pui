@@ -8,8 +8,16 @@
     <% if d_file['thumb'].blank? %>
  <div class="objectimage <%= (d_file['caption'].blank? ? 'nocaption' : '') %>">
    <a class="objectimagelnk" target="new" href="<%= d_file['out'] %>" title="<%= t('digital_object._public.link') %>">
-          <i class="fa fa-external-link"></i><br/>
-            <%= t('views._shared.digital_object_link', :name=> ( d_file['caption'].blank? ? "#{t('enumerations.instance_instance_type.digital_object')} #{d_file['material']}" : d_file['caption'])).html_safe %>
+          <i class="fa <%= { '(moving_image)' => 'fa-file-video-o' ,
+            '(sound_recording)' => 'fa-file-audio-o',
+            '(sound_recording_musical)' => 'fa-file-audio-o',
+            '(sound_recording_nonmusical)' => 'fa-file-audio-o' ,
+            '(still_image)' => 'fa-file-image-o' ,
+            '(text)' =>  'fa-file-text-o'}.fetch( d_file['material'], 'fa-file-o' ) %> fa-4x"></i>
+          <h5 class='ws-normal'><%= t('views._shared.digital_object_link', :name=> ( d_file['caption'].blank? ? "#{t('enumerations.instance_instance_type.digital_object')} #{d_file['material']}".titleize : d_file['caption'])).html_safe %></h5>
+          <p class="external-digital-object__content-btn">
+              <%= t('digital_object._public.go')%> <i class="fa fa-external-link" aria-hidden="true"></i>
+          </p>
         </a>
 </div>
 
