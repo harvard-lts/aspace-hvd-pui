@@ -18,7 +18,7 @@ en:
     welcome_hcs: <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_2aSEHM0J8QcsvVs" target="hcs">FEEDBACK</a><p class='serif'>Use the <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_2aSEHM0J8QcsvVs" target="hcs">Feedback Form</a> to report issues found in archival description, such as <a href="https://library.harvard.edu/harmful-language-library-collections" target="_blank">harmful language</a>, typos or suggested corrections. Use the <a href="https://harvard-lts.libanswers.com/aspace" target="_blank">Report a Problem</a> button to report any technological issues.
     welcome_notification: |
       <div class="alert welcome_notification" role="alert">
-        Explore a preview of the new and improved HOLLIS for Archival Discovery! Starting June 30. <a href="https://library.harvard.edu/about/news/2025-06-11/coming-june-30-preview-new-hollis-archival-discovery">Learn more</a>.
+        Preview the new and improved HOLLIS for Archival Discovery, launching later this Fall! <a href="https://library.harvard.edu/about/news/2025-06-11/coming-june-30-preview-new-hollis-archival-discovery">Learn more</a>.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
